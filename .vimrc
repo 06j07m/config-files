@@ -1,0 +1,70 @@
+" Get plugins and colourschemes 
+call plug#begin()
+    Plug 'whatyouhide/vim-gotham'
+    Plug 'preservim/nerdtree'
+    Plug 'altercation/vim-colors-solarized'
+    Plug 'crusoexia/vim-monokai'
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'jnurmine/Zenburn'
+    Plug 'tpope/vim-fugitive'
+    Plug 'godlygeek/tabular'
+    Plug 'preservim/vim-markdown'
+    Plug 'tpope/vim-surround'
+    Plug 'dracula/vim'
+call plug#end()
+
+" turn backup ON
+set backup
+set backupdir=~/.vim/vimbackups//
+
+" turn swap files ON
+set swapfile
+set directory=~/.vim/vimbackups//
+
+" turn undofiles ON
+set undofile
+set undodir=~/.vim/vimbackups//
+
+" Disable compatibility with vi which can cause unexpected issues.
+set nocompatible
+
+" filetype detection
+filetype on
+filetype plugin on
+filetype indent on
+
+" syntax highlighting
+syntax on
+let g:polyglot_disabled = ['markdown']
+
+" indents and syntax
+set autoindent
+set cindent
+set expandtab
+set smarttab
+set shiftwidth=4
+set tabstop=4
+set softtabstop=4
+
+" folding
+set foldmethod=indent
+
+" line numbers
+set relativenumber
+
+" formatting
+set formatoptions="tcroq"
+set textwidth=79
+
+" status bar
+set showmode
+set showcmd
+
+" show matching parentheses
+set showmatch
+
+" color scheme
+
+" font
+set encoding=UTF-8
+
