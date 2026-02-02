@@ -1,3 +1,6 @@
+" VIM CONFIGURATION
+" file: ~/.vimrc
+
 " Get plugins and colourschemes 
 call plug#begin()
     Plug 'whatyouhide/vim-gotham'
@@ -10,7 +13,7 @@ call plug#begin()
     Plug 'godlygeek/tabular'
     Plug 'preservim/vim-markdown'
     Plug 'tpope/vim-surround'
-    Plug 'dracula/vim'
+    Plug 'dracula/vim', { 'as': 'dracula' }
 call plug#end()
 
 " turn backup ON
@@ -49,10 +52,13 @@ set softtabstop=4
 " folding
 set foldmethod=indent
 
+" cursor line indicator
+set cursorline
+
 " line numbers
 set relativenumber
 
-" formatting
+" formatting (line wrap, comment wrap, extend comment)
 set formatoptions="tcroq"
 set textwidth=79
 
@@ -64,6 +70,7 @@ set showcmd
 set showmatch
 
 " color scheme
+colorscheme dracula
 
 " font
 set encoding=UTF-8
