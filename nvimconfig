@@ -4,12 +4,6 @@
 -- leader key
 vim.g.mapleader = " "
 
--- syntax highlight
-vim.cmd("syntax on")
-
--- detect filetype
-vim.cmd("filetype plugin indent on")
-
 -- indenting
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -19,7 +13,7 @@ vim.opt.copyindent = true
 vim.opt.smartindent = true
 
 -- folding
-vim.opt.foldmethod = indent
+vim.opt.foldmethod = "indent"
 
 -- line numbers
 vim.opt.number = true
@@ -40,7 +34,7 @@ vim.opt.cursorlineopt = "screenline"
 -- vim.opt.swapfile = true
 
 -- colours
-vim.opt.termguicolors = true
+vim.cmd.colorscheme("slate")
 
 -- line wrap (column defaults to 80)
 vim.opt.wrap = true

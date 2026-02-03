@@ -70,7 +70,8 @@ set showcmd
 set showmatch
 
 " color scheme
-colorscheme dracula
+" colorscheme dracula
+colorscheme slate
 
 " font
 set encoding=UTF-8
