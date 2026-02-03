@@ -76,3 +76,5 @@ colorscheme slate
 " font
 set encoding=UTF-8
 
+" set scrolloff so scrolling doesnt suck as much
+set scrolloff=5

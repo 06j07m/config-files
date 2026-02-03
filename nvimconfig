@@ -49,3 +49,6 @@ vim.opt.laststatus = 3
 
 -- show matching parentheses
 vim.opt.showmatch = true
+
+-- set scrolloff so scrolling doesnt suck as much
+vim.opt.scrolloff = 5
